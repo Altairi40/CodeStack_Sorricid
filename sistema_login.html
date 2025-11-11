@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Sorricid</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<script>
+  if (!sessionStorage.getItem("loggedIn")) {
+    window.location.href = "sistema.html";
+  }
+</script>
+<body>
+  <div class="login-container">
+    <h2>Login - Sorricid</h2>
+    <form id="loginForm">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="errorMessage" style="color:red;"></p>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Simulação de login (substitua por autenticação real)
+      if (user === "admin" && pass === "1234") {
+        window.location.href = "sistema.html"; // redireciona para o sistema
+      } else {
+        document.getElementById("errorMessage").textContent = "Usuário ou senha inválidos.";
+      }
+    });
+  </script>
+</body>
+</html>
