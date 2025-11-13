@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sorricid - Sistema Clínico</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SORRICID</h1>
+    <nav>
+      <span class="icon">🔔</span>
+      <span class="icon">⚙️</span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="">Agenda</a></li>
+        <li><a href="https://altairi40.github.io/CodeStack_Sorricid/serviços.html">Serviços</a></li>
+        <li><a href="">Financeiro</a></li>
+        <li><a href="https://altairi40.github.io/CodeStack_Sorricid/transacoes.html">Transações</a></li>
+        <li><a href="https://altairi40.github.io/CodeStack_Sorricid/pacientes_atendidos.html">Relatórios</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard">
+      <section class="resumo">
+        <h2>Transações</h2>
+        <div class="filtros">
+          <label><input type="radio" name="data" checked /> Data de pagamento</label>
+          <label><input type="radio" name="data" /> Data de lançamento</label>
+        </div>
+        <div class="valores">
+          <div class="box green">Receitas: R$ 0,00</div>
+          <div class="box red">Despesas: R$ 0,00</div>
+          <div class="box blue">Resultado: R$ 0,00</div>
+          <div class="box">Contas a receber: R$ 1.083,33</div>
+          <div class="box">Contas a pagar: R$ 0,00</div>
+          <div class="box">Resultado Projetado: R$ 1.083,33</div>
+        </div>
+      </section>
+
+      <section class="relatorio">
+        <h3>Relatório de Transações</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Paciente</th>
+              <th>Serviço</th>
+              <th>Método</th>
+              <th>Valor</th>
+              <th>Caixa</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>22/03/2024</td>
+              <td>Victor Eduardo</td>
+              <td>Consulta</td>
+              <td>Pix</td>
+              <td>R$ 150,00</td>
+              <td>Bradesco</td>
+              <td>Pago</td>
+            </tr>
+            <tr>
+              <td>21/03/2024</td>
+              <td>Elias Almeida</td>
+              <td>Procedimento</td>
+              <td>Cartão</td>
+              <td>R$ 300,00</td>
+              <td>Recepção</td>
+              <td>Pendente</td>
+            </tr>
+            <tr>
+              <td>20/03/2024</td>
+              <td>Lucas Shiraoka</td>
+              <td>Consulta</td>
+              <td>Dinheiro</td>
+              <td>R$ 100,00</td>
+              <td>Caixa Ana</td>
+              <td>Pago</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
+
