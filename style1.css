@@ -44,7 +44,7 @@ header .icon {
   cursor: pointer;
 }
 
-.a{
+a{
   color: black;
   text-decoration: none;
 }
@@ -135,4 +135,5 @@ th {
   background: #eee;
 
 }
+
 
