@@ -77,6 +77,12 @@ header .icon {
   min-width: 200px;
 }
 
+.box img{
+  max-wdth: 100%;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
 .green { border-left: 5px solid green; }
 .red { border-left: 5px solid red; }
 .blue { border-left: 5px solid blue; }
@@ -108,4 +114,5 @@ th, td {
 
 th {
   background: #eee;
+
 }
